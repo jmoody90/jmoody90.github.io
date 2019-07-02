@@ -1,0 +1,44 @@
+.glowBack::before {
+    content: '';
+  
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: inherit;
+  
+    filter: blur(20px);
+  
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+  
+  .glowBack:hover::before {
+    opacity: 1;
+  }
+
+  #image01::before {
+    background-image: url("https://images.unsplash.com/photo-1486012563054-a205a26e389b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    
+  }
+
+  #image02::before {
+    background-image: url("../images/ar-images/JL.SpecialCover_small.jpg");
+  }
+
+  #AR-Card-01::before {
+    background-image: url("../images/ar-images/cerealBoxesGradient2.jpg")
+  }
+
+  #AR-Card-02::before {
+    background-image: url("../images/ar-images/maroon5Gradient2.jpg")
+  }
+
+
+  
+  
