@@ -39,6 +39,10 @@
     background-image: url("../images/ar-images/maroon5Gradient2.jpg")
   }
 
+  #AR-Card-03::before {
+    background-image: url("../images/ar-images/BroncosGradient2.jpg")
+  }
+
 
   
   
