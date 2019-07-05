@@ -40,7 +40,7 @@ function spriteAnimation(){
     bgOffset();
     sprite.style.backgroundPosition = "-" + (offsetDist + additionalOffset) + "px 0px";
     offsetInterval++
-    console.log(offsetInterval);
+    console.log(sprite.style.backgroundPosition);
 }
 
 function bgOffset(){
