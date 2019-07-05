@@ -15,7 +15,6 @@ var win = $(window);
 var spriteWidth = animationFullImage.width / animSteps;
 win.on("resize", function () {
     var screenWidth = win.width();
-    console.log(spriteScale);
     sprite.style.width = (screenWidth/spriteScale)+"px";
     
     if (spriteWidth <= screenWidth){
@@ -41,6 +40,7 @@ function spriteAnimation(){
     bgOffset();
     sprite.style.backgroundPosition = "-" + (offsetDist + additionalOffset) + "px 0px";
     offsetInterval++
+    console.log(offsetInterval);
 }
 
 function bgOffset(){
