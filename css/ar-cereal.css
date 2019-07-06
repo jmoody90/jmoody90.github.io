@@ -8,8 +8,6 @@
 
 .contentUnit:nth-of-type(odd) {
   background: linear-gradient(340deg, #68c8f5, #86ffa4);
-  background-size: cover;
-  background-attachment: fixed;
 }
 .contentUnit:nth-of-type(odd) .subHead {
   background: #ffffff;
@@ -28,8 +26,6 @@
 
   .contentUnit:nth-of-type(odd) .subHead {
     background: linear-gradient(340deg, #68c8f5, #86ffa4);
-    background-size: cover;
-    background-attachment: fixed;
     color: #ffffff;
   }
 }

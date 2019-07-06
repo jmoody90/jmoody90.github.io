@@ -10,7 +10,7 @@ h2 {
   }
 
 #leadDiv {
-    background-color: #2c2c2c;
+    background-color: #1f1f1f;
   }
 
 p, ul, li {
@@ -77,11 +77,13 @@ p, ul, li {
     width: 100%;
   }
 
+.contentUnit {
+  background-attachment: scroll;
+  background-size: cover;
+}
+
 .contentUnit:nth-of-type(even) {
     background: linear-gradient(340deg, #1f1f1f, #3b3b3b);
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: -1;
   }
 
 .contentUnit:nth-of-type(even) .subHead {
@@ -113,7 +115,14 @@ p, ul, li {
     .contentUnit {
         border-radius: .6rem;
         margin-top: 3rem;
+        background-attachment: fixed !important;
+        background-size: cover;
       }
+
+    .subHead {
+      background-attachment: fixed  !important;
+      background-size: cover;
+    }
     .mediaBox {
         padding-top: 3rem;
       }
@@ -135,9 +144,6 @@ p, ul, li {
 
     .contentUnit:nth-of-type(even) .subHead {
         background: linear-gradient(340deg, #1f1f1f, #3b3b3b);
-        background-size: cover;
-        background-attachment: fixed;
-        z-index: -1;
         color: #ffffff;
       }
 }
@@ -208,8 +214,8 @@ p, ul, li {
 /*********************************** ANIMATIONS ************************************/
 
 .animElement {
-    opacity: 0;
+    opacity: 0 !important;
   }
   .alreadySeen {
-    opacity: 1;
+    opacity: 1 !important;
   }
