@@ -84,7 +84,14 @@ $(window).scroll(function(event) {
 
 
 
-    // console.log("progress to the top = " + nProgTop1);
+    console.log("1a progress to the top = " + nProgTop1);
+    console.log("1b progress to the top = " + nProgBottom1);
+    console.log("3a progress to the top = " + nProgTop3);
+    console.log("3b progress to the top = " + nProgBottom3);
+
+    // $("h2").replaceWith("<h2>3a = " + Math.round(nProgTop3*100) + "</h2><h2>3b = " + Math.round(nProgBottom3*100) + "</h2>");
+    $("h2").replaceWith("<h2>3a = " + Math.round(nProgTop3*100) + "   3b = " + Math.round(nProgBottom3*100) + "</h2>");
+    
 
     colorfulContent[0].style.background = "linear-gradient(0deg,rgb(255, " + (203 - (nProgBottom1*154)) + ", " + (62 + (nProgBottom1*31)) + "), rgb(255, " + (203 - (nProgTop1*154)) + ", " + (62 + (nProgTop1*31)) + "))";
     colorfulContent[1].style.background = "linear-gradient(0deg,rgb(255, " + (203 - (nProgBottom2*154)) + ", " + (62 + (nProgBottom2*31)) + "), rgb(255, " + (203 - (nProgTop2*154)) + ", " + (62 + (nProgTop2*31)) + "))";
