@@ -115,12 +115,12 @@ p, ul, li {
     .contentUnit {
         border-radius: .6rem;
         margin-top: 3rem;
-        background-attachment: fixed !important;
+        background-attachment: scroll !important;
         background-size: cover;
       }
 
     .subHead {
-      background-attachment: fixed  !important;
+      background-attachment: scroll  !important;
       background-size: cover;
     }
     .mediaBox {
