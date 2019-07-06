@@ -12,16 +12,15 @@ var spriteScale = spriteScaleString.slice((spriteScaleString.indexOf("(") + 1), 
 animationFullImage.src = imgSrc;
 var timerStart = Date.now();
 var win = $(window);
-var spriteWidth = animationFullImage.width / animSteps;
 win.on("resize", function () {
     var screenWidth = win.width();
     sprite.style.width = (screenWidth/spriteScale)+"px";
     
-    if (spriteWidth <= screenWidth){
+    if ((animationFullImage.width / animSteps) <= screenWidth){
         additionalOffset = 0;
     }
     else{
-        additionalOffset = ((spriteWidth-screenWidth)/2);
+        additionalOffset = (((animationFullImage.width / animSteps)-screenWidth)/2);
     }
    
     
@@ -40,9 +39,8 @@ function spriteAnimation(){
     bgOffset();
     sprite.style.backgroundPosition = "-" + (offsetDist + additionalOffset) + "px 0px";
     offsetInterval++
-    console.log(sprite.style.backgroundPosition);
 }
 
 function bgOffset(){
-    offsetDist = (offsetInterval % animSteps) * (spriteWidth);
+    offsetDist = (offsetInterval % animSteps) * (animationFullImage.width / animSteps);
 }
