@@ -24,25 +24,21 @@ $(window).on("resize", function () {
     
     
 
-    if (aspRatioComp < 0.8){
-        photoHolderWidth = (pWidth * 1.25);
+    if (aspRatioComp < 0.5){
+        photoHolderWidth = (pWidth * 2);
         photoHolderHeight = (photoHolderWidth / photoAspectRatio);
-        console.log("heightRatio = " + photoHolderHeight/pHeight);
     }
-    else if (aspRatioComp >= 0.8 && aspRatioComp < 1.0){
-        photoHolderWidth = (pWidth * (1.25 - ((aspRatioComp - 0.8) * 1.25)));
+    else if (aspRatioComp >= 0.5 && aspRatioComp < 1.0){
+        photoHolderWidth = (pWidth * (2 - ((aspRatioComp - 0.5) * 2)));
         photoHolderHeight = (photoHolderWidth / photoAspectRatio);
-        console.log("heightRatio = " + photoHolderHeight/pHeight);
     }
     else if (aspRatioComp >= 1.0 && aspRatioComp < 1.25){
         photoHolderHeight = (pHeight * aspRatioComp);
         photoHolderWidth = (photoHolderHeight * photoAspectRatio);
-        console.log("heightRatio = " + photoHolderHeight/pHeight);
     }
     else {
         photoHolderHeight = (pHeight * 1.25);
         photoHolderWidth = (photoHolderHeight * photoAspectRatio);
-        console.log("heightRatio = " + photoHolderHeight/pHeight);
     }
 
     // photoHolder.style.height = photoHolderHeight;
