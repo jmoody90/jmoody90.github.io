@@ -1,13 +1,7 @@
-
-.gradientBackground {
-  background: linear-gradient(340deg, #9c23ff, #ff3460);
-  background-size: cover;
-  background-attachment: fixed;
-  }
-
-
 .contentUnit:nth-of-type(odd) {
   background: linear-gradient(340deg, #ff315d, #ffcb3e);
+  /* hsv 347.18, 100%, 59.61% - 43.83, 100%, 62.16% */
+  /* rgb 255, 49, 93 - 255, 203, 62 */
   background-size: cover;
 }
 .contentUnit:nth-of-type(odd) .subHead {

@@ -1,0 +1,156 @@
+a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+tspan {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-anchor: middle;
+}
+
+tspan:nth-of-type(1) {
+    font-size: 1.29rem
+}
+
+tspan:nth-of-type(2) {
+    font-size: 1.5rem
+}
+
+p, ul, li {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    /*text-shadow: 1px 1px 5px rgba(0, 0, 0, .3);*/
+  }
+
+.subText {
+    font-size: 0.33rem;
+    font-weight: 300;
+}
+
+.item rect {
+    clip-path: url(#clipping);
+    }
+
+
+
+.pageHeadContainer {
+    width: calc(100vw - (100vw - 100%));
+    height: calc(100vh - 60px);
+    background: linear-gradient(340deg, rgb(28,255,151), rgb(0,246,255));
+    background-size: cover;
+
+}
+
+.whiteBox {
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+}
+
+#stop1 {
+    stop-color: rgb(0, 246, 255);
+}
+
+#stop2 {
+    stop-color: rgb(28, 255, 151);
+}
+
+.pictureContainer {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.headPicContainer {
+    height: 50%;
+    width: 50%;
+}
+
+.headPic {
+    max-height: 90%;
+    max-width: 80%;
+    position: relative;
+    right: 0px;
+}
+
+.rectangle {
+    width: 100vw;
+    height: 100vh;
+}
+
+.knockoutTextContainer {
+    width: 100%;
+    height: 50%;
+}
+
+.knockoutTextBox {
+    width: 100%;
+    height: 100%;
+}
+
+.contentUnit:nth-of-type(odd) {
+    background: linear-gradient(340deg, #1f1f1f, #3b3b3b);
+    /* hsv 347.18, 100%, 59.61% - 43.83, 100%, 62.16% */
+    /* rgb 255, 49, 93 - 255, 203, 62 */
+    background-size: cover;
+}
+  .contentUnit:nth-of-type(odd) .subHead {
+    background: #ffffff;
+    color: #2c2c2c;
+  }
+
+.contentUnit:nth-of-type(even) {
+    background: linear-gradient(340deg, rgb(28,255,151), rgb(0,246,255));
+}
+
+.contentUnit:nth-of-type(even) .subHead {
+    background-color: #ffffff;
+    color: rgb(14, 250, 203);
+}
+
+.contentUnit:nth-of-type(even) p, ul, li {
+    color: #2c2c2c;
+}
+  
+
+
+@media (min-width: 768px) {
+
+    .pictureContainer {
+        height: 100%;
+    }
+
+    .knockoutTextContainer {
+        height: 100%;
+    }
+
+
+    .contentUnit:nth-of-type(odd) .subHead {
+        background: linear-gradient(340deg, #1c1c1c, #3c3c3c);
+        color: #ffffff;
+      }
+
+    .contentUnit:nth-of-type(even) .subHead {
+        background: linear-gradient(340deg, rgb(28,255,151), rgb(0,246,255));
+        color: #ffffff;
+    }
+}
+
+
+
+
+
+/*********************************** ANIMATIONS ************************************/
+
+.animatedSprite {
+    --animSteps: 20;
+    max-width: 624px;
+    height: 351px;
+    background-image: url('../images/ar-images/CheerleaderSpriteC.png');
+    background-position: 0px 0px;
+    transform: scale(1);
+    position: relative;
+  }
