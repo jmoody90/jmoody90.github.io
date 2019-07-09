@@ -3,19 +3,18 @@ a {
     font-weight: 300;
 }
 
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 2.5rem;
+    line-height: 95%;
+  }
+
 tspan {
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 1rem;
     text-anchor: middle;
-}
-
-tspan:nth-of-type(1) {
-    font-size: 1.61rem
-}
-
-tspan:nth-of-type(2) {
-    font-size: 1.88rem
 }
 
 p, ul, li {
@@ -29,6 +28,16 @@ p, ul, li {
     font-size: 0.41rem;
     font-weight: 300;
 }
+
+
+tspan:nth-of-type(1) {
+    font-size: 1.61rem
+}
+
+tspan:nth-of-type(2) {
+    font-size: 1.88rem
+}
+
 
 .item rect {
     clip-path: url(#clipping);
