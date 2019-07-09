@@ -121,7 +121,8 @@ tspan:nth-of-type(2) {
 }
 
 #brandsSVG {
-    max-height: 300px;
+    width: 100%;
+    height: calc((100vw - (100vw - 100%))*0.545);
 }
 
 .custom-btn {
