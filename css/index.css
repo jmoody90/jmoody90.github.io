@@ -3,19 +3,19 @@ a {
     font-weight: 300;
 }
 
-text {
+tspan {
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 1rem;
     text-anchor: middle;
 }
 
-text:nth-of-type(1) {
-    font-size: 1.29rem
+tspan:nth-of-type(1) {
+    font-size: 1.61rem
 }
 
-text:nth-of-type(2) {
-    font-size: 1.5rem
+tspan:nth-of-type(2) {
+    font-size: 1.88rem
 }
 
 p, ul, li {
@@ -26,7 +26,7 @@ p, ul, li {
   }
 
 .subText {
-    font-size: 0.33rem;
+    font-size: 0.41rem;
     font-weight: 300;
 }
 
