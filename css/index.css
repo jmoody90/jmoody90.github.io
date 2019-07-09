@@ -121,8 +121,8 @@ tspan:nth-of-type(2) {
 }
 
 #brandsSVG {
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
 }
 
 .custom-btn {
