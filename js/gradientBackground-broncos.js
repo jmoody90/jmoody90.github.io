@@ -84,10 +84,7 @@ $(window).scroll(function(event) {
 
 
 
-    console.log("1a progress to the top = " + nProgTop1);
-    console.log("1b progress to the top = " + nProgBottom1);
-    console.log("3a progress to the top = " + nProgTop3);
-    console.log("3b progress to the top = " + nProgBottom3);
+    
     
 
     // DEBUG*****************************

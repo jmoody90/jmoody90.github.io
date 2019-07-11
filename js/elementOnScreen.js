@@ -21,7 +21,7 @@ var win = $(window);
 
 var modsEnteringRight = $(".subHead");
 var modsEnteringUp = $(".textBox");
-var modsForAnimation = $(".animElement")
+var modsForAnimation = $(".animElement");
 
 
 
@@ -31,6 +31,13 @@ modsForAnimation.each(function(i, el) {
     el.addClass("alreadySeen").trigger("classChange");
   }
 });
+
+for (var i = 0; i < modsForAnimation.length; i++) {
+  if (!$(modsForAnimation[i]).hasClass("alreadySeen")){
+  modsForAnimation[i].style.opacity = "0";
+  }
+  }
+
 
 win.scroll(function(event) {
   
@@ -48,6 +55,25 @@ win.scroll(function(event) {
   });
   
 });
+
+win.on("resize", function () {
+
+  modsForAnimation.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      // el.addClass("enter-right");
+      // el.addClass("fade-in");
+      // el.removeClass("to-enter-right");
+      // el.removeClass("to-fade-in");
+      if(!el.hasClass("alreadySeen")){
+        el.addClass("newlySeen").trigger("classChange");
+      }
+    } 
+  });
+
+}).resize();
+
+
 
 
 

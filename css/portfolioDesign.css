@@ -1,4 +1,9 @@
-.glowBack::before {
+.topBuffer {
+  /* margin-top: 60px; */
+}
+
+
+/* .glowBack::before {
     content: '';
   
     z-index: -1;
@@ -18,8 +23,9 @@
     transition: opacity 300ms;
   }
   
+
   .glowBack:hover::before {
-    opacity: 1;
+    
   }
 
   #image01::before {
@@ -42,7 +48,30 @@
   #AR-Card-03::before {
     background-image: url("../images/ar-images/BroncosGradient2.jpg")
   }
+  .testGradient::before {
+    background: linear-gradient(340deg, rgb(209, 91, 255), rgb(73, 152, 255));
+    opacity: .5;
+  } */
 
+  .glowBack{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: linear-gradient(340deg, rgb(209, 91, 255), rgb(73, 152, 255));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: inherit;
+  
+    filter: blur(20px);
+  
+    opacity: 0;
+    transition: opacity 500ms;
+  }
 
   
   

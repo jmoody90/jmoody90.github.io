@@ -1,6 +1,7 @@
 var anElem = $(".animElement")
 
 anElem.on('classChange', function() {
+    console.log(this);
     
     if($(this).hasClass("newlySeen")){
         if($(this).hasClass("fadeRight")){
