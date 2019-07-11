@@ -13,7 +13,7 @@ $w.scroll(function(event) {
     windowHeight = $w.height();
     windowWidth = $w.width();
     
-    if (!is_touch_device() && (windowWidth + getScrollBarWidth()) < 768){
+    if (is_touch_device() && (windowWidth + getScrollBarWidth()) < 768){
 
         card.each(function(i,el){
             cardPosition[i]=distFromMidScreen(el).dFromMid;
@@ -46,7 +46,7 @@ $w.on("resize", function () {
     windowHeight = $w.height();
     windowWidth = $w.width();
     
-    if (!is_touch_device() && (windowWidth + getScrollBarWidth()) < 768){
+    if (is_touch_device() && (windowWidth + getScrollBarWidth()) < 768){
 
         card.each(function(i,el){
             cardPosition[i]=distFromMidScreen(el).dFromMid;
