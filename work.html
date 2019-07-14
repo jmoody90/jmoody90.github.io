@@ -50,168 +50,132 @@
 
         
 
+
+        
+
         <!-- work selection buttons -->
         <div class="container">
             <div class="row justify-content-center no-gutters">
-                <div class="col col-md-8 center mb-5">
-                    <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+                <div class="col center">
+                    <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
                         <li class="nav-item">
-                            <a class="dingus nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">AUGMENTED REALITY</a>
+                            <a class="custBut nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                                    <!-- <img src="images/ar-images/quarterAR.png" width="125px" height="125px" style="opacity: 1;" alt=""> -->
+                                    <div id="buttonSpriteAR1"></div>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="dingus nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">MOTION GRAPHICS</a>
+                            <a class="custBut nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                    <div id="buttonSpriteAR2"></div>
+                            </a>
                         </li>
                     </ul>
                 </div>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active container" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <div class="row px-4">
-                                <div class = "col-md-6">
-                                    <div class="card mb-4 testGradient" id="">
-                                        <div class="glowBack"></div>
-                                        <img src="images/ar-images/cerealBoxesGradient2.jpg" id="imagePlacement02" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text"  style="height: 5rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="AR/cereal.html" class="btn btn-primary stretched-link">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class = "col-md-6">
-                                    <div class="card mb-4 testGradient" id="">
-                                        <div class="glowBack"></div>
-                                        <img src="images/ar-images/maroon5Gradient2.jpg" id="imagePlacement02" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text"  style="height: 5rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="AR/maroon-5.html" class="btn btn-primary stretched-link">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row px-4">
-                                <div class = "col-md-6">
-                                    <div class="card mb-4 testGradient" id="">
-                                        <div class="glowBack"></div>
-                                        <img src="images/ar-images/BroncosGradient2.jpg" id="imagePlacement02" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text"  style="height: 5rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="AR/broncos.html" class="btn btn-primary stretched-link">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            </div>
 
+            
+            <div>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active container" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <!-- Selection Text -->
+                        <div class="row justify-content-center py-4">
+                            <div class="knockoutTextContainer svgGradient item1 col col-md-10">
+                                <div class="whiteBox">
+                                    <svg class="knockoutTextBox" viewBox= "0 0 800 100">
+                                        <defs >
+                                            <linearGradient id="Gradient1" x1="0" x2="0.36397" y1=".5" y2=".75">
+                                                <stop id="stop1" offset="0%" stop-color="rgb(0,246,255)"/>
+                                                <stop id="stop2" offset="100%" stop-color="rgb(28,255,151)"/>
+                                            </linearGradient>
+                                            <clipPath id="clipping1" x="50%" y="50%">
+                                                <text x="50%" y="50%">
+                                                    <tspan x="50%" y="70%">AUGMENTED REALITY</tspan>
+                                                </text>
+                                            </clipPath>
+                                        </defs>
+                                        <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)"/>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                        <div class="row p-4 categoryHolder">
+                            <div class = "col-md-6 col-xl-4 py-3">
+                                <div class="card testGradient" id="">
+                                    <div class="glowBack"></div>
+                                    <img src="images/ar-images/cerealBoxesGradient2.jpg" id="imagePlacement02" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text"  style="height: 5rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="AR/cereal.html" class="btn btn-primary stretched-link">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "col-md-6 col-xl-4 py-3">
+                                <div class="card testGradient" id="">
+                                    <div class="glowBack"></div>
+                                    <img src="images/ar-images/maroon5Gradient2.jpg" id="imagePlacement02" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text"  style="height: 5rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="AR/maroon-5.html" class="btn btn-primary stretched-link">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "col-md-6 col-xl-4 py-3">
+                                <div class="card testGradient" id="">
+                                    <div class="glowBack"></div>
+                                    <img src="images/ar-images/BroncosGradient2.jpg" id="imagePlacement02" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text"  style="height: 5rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="AR/broncos.html" class="btn btn-primary stretched-link">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <!-- Selection Text -->
+                        <div class="row justify-content-center py-4">
+                                <div class="knockoutTextContainer svgGradient item2 col col-md-10">
+                                    <div class="whiteBox">
+                                        <svg class="knockoutTextBox" viewBox= "0 0 800 100">
+                                            <defs >
+                                                <linearGradient id="Gradient2" x1="0" x2="0.36397" y1=".5" y2=".75">
+                                                    <stop id="stop3" offset="0%" stop-color="rgb(0,246,255)"/>
+                                                    <stop id="stop4" offset="100%" stop-color="rgb(28,255,151)"/>
+                                                </linearGradient>
+                                                <clipPath id="clipping2" x="50%" y="50%">
+                                                    <text x="50%" y="50%">
+                                                        <tspan x="50%" y="70%">VFX / MOTION GRAPHICS</tspan>
+                                                    </text>
+                                                </clipPath>
+                                            </defs>
+                                            <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row px-4 categoryHolder">
+                                <h2 class="comingSoon m-auto">Content coming soon...</h2>
+                            </div>
+                    </div>
                         
                     
                 </div>
             </div>
         </div>
 
-
-
-		<!-- <div class = "container">
-				<div class = "row">
-					<div class = "col-md-6">
-						<div class = "card mb-4" id="image01">
-							<img src="resources/saffu-201111-unsplash.jpg" id="imagePlacement01" class="card-img-top image01" alt="...">
-							<div class = "card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class = "card-text">This is a description of category 1</p>
-								<a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
-							</div>
-						</div>
-	
-					</div>
-					<div class = "col-md-6">
-						<div class="card mb-4 testGradient" id="">
-							<div class="glowBack"></div>
-							<img src="resources/JL.SpecialCover_small.jpg" id="imagePlacement02" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text"  style="height: 5rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
-							</div>
-						</div>
-					</div>
-					<div class = "col-md-6">
-						<div class="card mb-4 testGradient" id="">
-							<div class="glowBack"></div>
-							<img src="resources/JL.SpecialCover_small.jpg" id="imagePlacement02" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text"  style="height: 5rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
-							</div>
-						</div>
-					</div>
-					<div class = "col-md-6">
-						<div class="card mb-4 testGradient" id="">
-							<div class="glowBack"></div>
-							<img src="resources/JL.SpecialCover_small.jpg" id="imagePlacement02" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text"  style="height: 5rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
-							</div>
-						</div>
-					</div>
-					<div class = "col-md-6">
-						<div class="card mb-4 testGradient" id="">
-							<div class="glowBack"></div>
-							<img src="resources/JL.SpecialCover_small.jpg" id="imagePlacement02" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text"  style="height: 5rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
-							</div>
-						</div>
-					</div>
-					<div class = "col-md-6">
-						<div class="card mb-4 testGradient" id="">
-							<div class="glowBack"></div>
-							<img src="resources/JL.SpecialCover_small.jpg" id="imagePlacement02" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text"  style="height: 5rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
-							</div>
-						</div>
-					</div>
-					<div class = "col-md-6">
-						<div class="card mb-4 testGradient" id="">
-							<div class="glowBack"></div>
-							<img src="resources/JL.SpecialCover_small.jpg" id="imagePlacement02" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text"  style="height: 5rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
-							</div>
-						</div>
-					</div>
-					<div class = "col-md-6">
-						<div class="card mb-4 testGradient" id="">
-							<div class="glowBack"></div>
-							<img src="resources/JL.SpecialCover_small.jpg" id="imagePlacement02" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text"  style="height: 5rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
-
 		<!-- Optional JavaScript -->
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<!-- <script src="API-Integration.js"></script> -->
 		<script src="s/augmentedReality.js"></script>
-		<script src="js/cardPositionGlow.js"></script>
+		<!-- <script src="js/cardPositionGlow.js"></script> -->
 		<script src="js/tabs.js"></script>
+		<script src="js/buttonSprite.js"></script>
 
     	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
     	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->

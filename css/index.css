@@ -112,7 +112,7 @@ tspan:nth-of-type(2) {
   }
 
 .contentUnit:nth-of-type(even) {
-    background: linear-gradient(340deg, rgb(255, 0, 255), rgb(0, 255, 255));
+    background: linear-gradient(340deg, rgb(242, 13, 255), rgb(111, 144, 255));
 }
 
 .contentUnit:nth-of-type(even) .subHead {
@@ -124,16 +124,15 @@ tspan:nth-of-type(2) {
     max-height: 300px;
 }
 
-.custom-btn {
+.custom-btn{
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: 1.5rem;
-    line-height: 100%;
+    line-height: 1;
     background-color: #ffffff00;
     color: #ffffff;
-    /* border-color: #ffffff; */
-    display: inline-flex;
-    vertical-align: middle;
+    padding: 5px 5px 10px 10px;
+    /* position:relative; */
 }
 
 .custom-btn:hover {
@@ -143,8 +142,24 @@ tspan:nth-of-type(2) {
 
 i {
     line-height: 100%;
-    /* transform: translateY(50%); */
 }
+
+.icon {
+    display: inline-flex;
+    align-self: center;
+}
+.icon svg {
+    height:1em;
+    width:1em;
+    /* color: #ff0000; */
+    fill: currentColor;
+    
+}
+.icon.baseline svg {
+    top: .125em;
+    position: relative;
+}
+
 
 
 @media (min-width: 768px) {
@@ -164,7 +179,7 @@ i {
       }
 
     .contentUnit:nth-of-type(even) .subHead {
-        background: linear-gradient(340deg, rgb(255, 0, 255), rgb(0, 255, 255));
+        background: linear-gradient(340deg, rgb(242, 13, 255), rgb(111, 144, 255));
         color: #ffffff;
     }
 
@@ -175,8 +190,8 @@ i {
         background-color: #ffffff00;
         color: #2c2c2c;
         /* border-color: #2c2c2c; */
-        display: inline-flex;
-        vertical-align: middle;
+        /* display: inline-flex;
+        vertical-align: middle; */
     }
     
     .custom-btn:hover {
