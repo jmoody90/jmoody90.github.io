@@ -24,3 +24,7 @@ tspan {
     font-size: 4rem;
     text-anchor: middle;
 }
+.row {
+    background-color: #ffffff;
+    border-radius: .6rem;
+}
