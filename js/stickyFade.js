@@ -25,8 +25,13 @@ $.fn.followTo = function (pos) {
 };
 
 $('#leadDiv').followTo(500);
+$('#mainNavbar').followTo(500);
+$('#leadDiv').css({
+    position: 'fixed',
+    top: 0
+});
 $(window).on("resize", function () {
     var container = document.getElementById('leadDivContainer');
     var lead = document.getElementById('leadDiv');
-    container.style.height = lead.offsetHeight + 500 + "px";
+    container.style.height = lead.offsetHeight + 560 + "px";
 }).resize();

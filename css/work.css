@@ -1,6 +1,15 @@
 body {
     background-color: #1f1f1f;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
 }
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 95%;
+  }
 
 a {
     font-family: "Roboto", sans-serif;
@@ -18,6 +27,7 @@ a {
 
 .nav-pills a {
     /* width: 85%; */
+    margin-top: 1.5rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
@@ -41,14 +51,16 @@ a {
     -ms-user-select: none;
     user-select: none;
     padding: 1em 1em;
-    border-radius: 50px;
+    border-radius: .6rem !important;
     display: inline-block;
-    color: #3c3c3c;
+    color: #2f2f2f;
 }
 
 .card {
-    background-color: #2f2f2f;
+    background-color: #1f1f1f;
     color: #ffffff;
+    border-radius: .6rem;
+    border-width: 0;
 }
     
 
@@ -70,7 +82,7 @@ a {
     }
     tspan {
         font-family: "Roboto", sans-serif;
-        font-weight: 300;
+        font-weight: 100;
         font-size: 4rem;
         text-anchor: middle;
     }
@@ -85,14 +97,15 @@ a {
     .categoryHolder {
         min-height: 33rem;
         margin-bottom: 3rem;
-        border-radius: 1rem;
-        background-color: #3c3c3c;
+        border-radius: .6rem;
+        background-color: #2f2f2f;
+        z-index: 10000;
     }
 
     .comingSoon {
         color: rgb(255, 255, 255);
         font-size: 100%;
-        font-family: "Railway", sans-serif;
+        font-family: "Raleway", sans-serif;
         font-weight: 300;
     }
 
@@ -125,7 +138,7 @@ a {
   }
 
 
-  .custBut:hover::before {
+  .custBut:hover::before{
     opacity: 1;
     transition: opacity 300ms;
   }
@@ -134,7 +147,7 @@ a {
     --animSteps: 18;
     max-width: 125px;
     height: 125px;
-    background-image: url('../images/ar-images/AR-Button-Icon-Anim2.png');
+    background-image: url('../images/ar-images/AR-Button-Icon-Anim-125px.png');
     background-position: 0px 0px;
     transform: scale(1);
     position: relative;
@@ -143,10 +156,55 @@ a {
     --animSteps: 18;
     max-width: 125px;
     height: 125px;
-    background-image: url('../images/ar-images/VFX-Button-Icon-Anim.png');
+    background-image: url('../images/ar-images/VFX-Button-Icon-Anim-125px.png');
     background-position: 0px 0px;
     transform: scale(1);
     position: relative;
+  }
+
+
+  .custom-btn{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 1;
+    background-color: #ffffff00;
+    color: #ffffff;
+    padding: 5px 5px 10px 10px;
+    border-radius: 0.6rem;
+    /* position:relative; */
+}
+
+.custom-btn:hover {
+    background-color: #ffffff;
+    color: rgb(152, 152, 255);
+}
+
+.icon {
+    display: inline-flex;
+    align-self: center;
+}
+.icon svg {
+    height:1em;
+    width:1em;
+    /* color: #ff0000; */
+    fill: currentColor;
+    
+}
+.icon.baseline svg {
+    top: .125em;
+    position: relative;
+}
+
+.subHead {
+    padding-left: 6rem;
+    padding-right: 2rem;
+    margin-left: -6rem;
+    margin-bottom: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #ffffff;
+    color: #2c2c2c;
   }
 
 
@@ -160,13 +218,13 @@ a {
     #buttonSpriteAR1 {
         max-width: 250px;
         height: 250px;
-        background-image: url('../images/ar-images/AR-Button-Icon-Anim3.png');
+        background-image: url('../images/ar-images/AR-Button-Icon-Anim-250px.png');
         /* position: relative; */
       }
     #buttonSpriteAR2 {
         max-width: 250px;
         height: 250px;
-        background-image: url('../images/ar-images/VFX-Button-Icon-Anim2.png');
+        background-image: url('../images/ar-images/VFX-Button-Icon-Anim-250px.png');
         /* position: relative; */
       }
   }
@@ -174,4 +232,19 @@ a {
   
   /* // Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {
+  }
+
+
+
+
+
+
+
+  /*********************************** ANIMATIONS ************************************/
+
+.animElement {
+    opacity: 0 !important;
+  }
+  .alreadySeen {
+    opacity: 1 !important;
   }
